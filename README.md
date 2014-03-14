@@ -33,7 +33,7 @@ class VacationController < ApplicationController
   end
 
   def view
-    @vacation = Vacation.find_by(:slug, params[:vacation])
+    @vacation = Vacation.find_by(slug: params[:vacation])
   end
 end
 ```
@@ -69,7 +69,7 @@ Constraints operate with true/false.  They tell the router whether or not a part
 ```
 class VacationConstraint
   def self.matches?(request)
-    vacation = Vacation.find_by_slug(request.params[:vacation]) rescue nil
+    vacation = Vacation.find_by(slug: request.params[:vacation]) rescue nil
     vacation.present?
   end
 end
@@ -91,3 +91,4 @@ What if we have another model?  What should we do?
 
 Think of this in an ecommerce scenario, where you might have a category slug and product slug that both appear right after the .com.  Maybe similarly with a blog, where a post, category, and date can all appear after the .com  What's the priority?
 
+ 
