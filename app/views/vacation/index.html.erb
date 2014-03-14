@@ -1,0 +1,5 @@
+<ul>
+  <% @vacations.each do |v| %>
+    <li><%= link_to v.name, v.slug %></li>
+  <% end %>
+</ul>

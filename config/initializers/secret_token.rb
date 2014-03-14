@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Constraint::Application.config.secret_key_base = '0b2be8b163c4edc62241bc2987371a4f9e5a232ce47a1e7c2dca11599bca78c06c2336c293bf30131728cb6442a2a5366105bdbfdb0ed8e2b964376de435d415'
+Constraint::Application.config.secret_key_base = 'a2328754f687c3d88934e43470c575d407ad183321b5459fce0767380df37299e2f894b6fb4d718d2097f0b56e54c5ee36e972e6f80f919d22bb1d4bfa21fb15'
